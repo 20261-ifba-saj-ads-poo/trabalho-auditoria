@@ -1,0 +1,13 @@
+{
+    "maven.view": "hierarchical",
+    "maven.terminal.favorites": [
+        {
+            "alias": "javafx-run",
+            "command": "clean javafx:run"
+        }
+
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.inlayHints.parameterNames.enabled": "none",
+    "java.compile.nullAnalysis.mode": "automatic"
+}

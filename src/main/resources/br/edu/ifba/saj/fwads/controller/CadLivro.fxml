@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="263.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.saj.fwads.controller.CadLivroController">
+   <children>
+      <Label fx:id="lbTitulo" layoutX="14.0" layoutY="14.0" text="Titulo" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <TextField fx:id="txTitulo" layoutX="14.0" layoutY="32.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Label fx:id="lbSubTitulo" layoutX="14.0" layoutY="58.0" text="Sub Titulo" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <TextField fx:id="txSubTitulo" layoutX="14.0" layoutY="76.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Label fx:id="lbISBN" layoutX="14.0" layoutY="102.0" text="ISBN" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <TextField fx:id="txISBN" layoutX="14.0" layoutY="119.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Label fx:id="lbAutor" layoutX="14.0" layoutY="145.0" text="Autor" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <ChoiceBox fx:id="slAutor" layoutX="14.0" layoutY="163.0" prefHeight="26.0" prefWidth="262.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Button defaultButton="true" layoutX="159.0" layoutY="223.0" mnemonicParsing="false" onAction="#salvarLivro" text="Salvar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="83.0" />
+      <Button cancelButton="true" layoutX="224.0" layoutY="220.0" mnemonicParsing="false" onAction="#limparTela" text="Cancelar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>
