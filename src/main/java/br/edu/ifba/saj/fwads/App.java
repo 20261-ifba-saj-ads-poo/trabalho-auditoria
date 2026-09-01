@@ -58,7 +58,7 @@ public class App extends Application {
             loader = new FXMLLoader(App.class.getResource(fxml));
             Parent parent = loader.load();
             Object controller = loader.getController();
-            if (controller != null) {
+            if (controller  != null) {
                 parent.getProperties().put("controller", loader.getController());
             }
             return parent;

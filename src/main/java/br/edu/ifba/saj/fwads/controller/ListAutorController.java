@@ -36,20 +36,24 @@ public class ListAutorController {
     }
 
     public void loadAutorList() {
-        tblAutor.setItems(FXCollections.observableList(new GenericServiceImpl<>(Autor.class, UUID.class).buscarTodos()));
+        tblAutor.setItems(
+                FXCollections.observableList(new GenericServiceImpl<>(Autor.class, UUID.class).buscarTodos()));
+        tblAutor.refresh();
+
     }
 
     @FXML
     public void showNovo() {
         showModal(null);
     }
+
     private void showModal(Autor autorSelecionado) {
         Stage stage = new Stage();
         Scene scene = new Scene(App.loadFXML("controller/CadAutor.fxml"), 800, 600);
         stage.setScene(scene);
         stage.initModality(Modality.APPLICATION_MODAL);
         CadAutorController controller = (CadAutorController) App.getController();
-        if(autorSelecionado != null){
+        if (autorSelecionado != null) {
             controller.setAutorSelecionado(autorSelecionado);
         }
         controller.setListAutorController(this);
